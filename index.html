@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>403 — archivo en construcción</title>
+  <meta name="description" content="Portafolio artístico, archivo personal, bitácora de proceso." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       TOPBAR — superpuesta sobre el hero (transparent)
+       ═══════════════════════════════════════════ -->
+  <header class="topbar topbar--transparent" role="banner">
+    <span class="topbar__id">403</span>
+    <span class="topbar__crumb">portafolio artístico / archivo personal</span>
+    <div class="topbar__meta">
+      <span class="topbar__dot" title="en línea"></span>
+      <span>MMXXV</span>
+      <!-- botón mobile: aparece en pantallas pequeñas -->
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">[menú]</button>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       NAV OVERLAY (mobile)
+       ═══════════════════════════════════════════ -->
+  <div class="nav-overlay" role="dialog" aria-label="Menú de navegación">
+    <button class="nav-overlay__close" aria-label="Cerrar menú">[cerrar]</button>
+    <nav class="nav-overlay__links" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="work.html">Work</a>
+      <a href="bitacora.html">Bitácora</a>
+      <a href="archivo.html">Archivo</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+       HERO — pantalla completa, composición editorial
+       ═══════════════════════════════════════════ -->
+  <main>
+    <section class="hero" aria-label="Portada">
+
+      <!--
+        IMAGEN PRINCIPAL:
+        Descomenta el <img> y pon la ruta a tu imagen.
+        Tamaño recomendado: 2400×1600 px mínimo.
+        La imagen tiene un filtro de contraste / grises aplicado por CSS.
+        Sin imagen: el gradiente oscuro de fondo ya funciona bien.
+      -->
+      
+      <img
+        src="assets/hero.png"
+        alt="imagen principal"
+        class="hero__img"
+      />
+     
+
+      <!-- gradiente de oscurecimiento sobre la imagen -->
+      <div class="hero__vignette" aria-hidden="true"></div>
+
+      <!-- "403" — TÍTULO ENORME, anclado abajo-izquierda -->
+      <h1 class="hero__title" aria-label="403">403</h1>
+
+      <!-- SUBTÍTULO — en la esquina inferior izquierda -->
+      <p class="hero__sub">
+        archivo en construcción — <span class="js-timestamp"></span>
+      </p>
+
+      <!--
+        NAVEGACIÓN — lado derecho del hero.
+        Integrada en la composición, no es una barra.
+      -->
+      <p class="hero__nav-label" aria-hidden="true">índice</p>
+      <nav class="hero__nav" aria-label="Secciones">
+        <a href="work.html">Work</a>
+        <a href="bitacora.html">Bitácora</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contacto</a>
+      </nav>
+
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         SECCIÓN INFERIOR — PUERTA AL ARCHIVO + descripción
+         ═══════════════════════════════════════════ -->
+    <section class="home-lower" aria-label="Acceso al archivo">
+
+</div>
+      <!-- Columna izquierda: el elemento especial -->
+      <div class="home-lower__left js-reveal">
+        <span class="home-lower__label">// acceso</span>
+
+        <!--
+          ARCHIVE DOOR — elemento especial.
+          El JS aplica text scramble al texto [data-scramble].
+          CSS: relleno desde abajo al hacer hover.
+        -->
+
+
+          <!-- POPUP TEST -->
+      <div id="popup-test" class="popup">
+        <div class="popup-content">
+          <p class="popup-label">INPUT REQUIRED</p>
+
+          <input id="calc-input" type="text" placeholder="400 + 3">
+
+          <div class="popup-actions">
+            <button onclick="closePopup()">cerrar</button>
+            <button onclick="checkAccess()">→</button>
+          </div>
+
+          <p id="feedback"></p>
+        </div>
+      </div>
+
+
+        <!-- Button access archivo -->
+        <a href="#" class="archive-door" id="archive-door" aria-label="Acceder al archivo completo">
+          <span class="archive-door__inner">
+            <span class="archive-door__arrow" aria-hidden="true">→</span>
+            <span data-scramble>· 403 · </span>
+          </span>
+        </a>
+        <!-- <a href="archivo.html" class="archive-door" aria-label="Acceder al archivo completo">
+          <span class="archive-door__inner">
+            <span class="archive-door__arrow" aria-hidden="true">→</span>
+            <span data-scramble>· 403 · </span>
+          </span>
+        </a> -->
+
+        <!-- notas pequeñas debajo -->
+        <div class="home-lower__note" aria-label="Estado del archivo">
+          <p>archivo parcialmente indexado</p>
+          <p>algunos elementos sin clasificar</p>
+          <p>actualización continua</p>
+        </div>
+      </div>
+
+      <!-- Columna derecha: descripción + mini índice -->
+      <div class="home-lower__right js-reveal">
+        <p class="home-lower__desc">
+          Un espacio para acumular lo que no cabe en ninguna
+          categoría. Proceso, descartes, hallazgos.
+        </p>
+
+        <!-- mini índice del sitio -->
+        <dl class="home-lower__index" aria-label="Secciones del sitio">
+          <dt>01</dt><dd>Work — proyectos seleccionados</dd>
+          <dt>02</dt><dd>Bitácora — notas de proceso</dd>
+          <dt>03</dt><dd>Archivo — todo el material</dd>
+          <dt>04</dt><dd>About — quién, qué, por qué</dd>
+        </dl>
+      </div>
+
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="home-footer js-reveal">
+      <p>403 &copy; 2026</p>
+      <p>· 403 · 403 · 403 · 403 · 403 · 403 · 403 · 403 · 403 ·</p>
+    </footer>
+
+  </main>
+
+
+  <!-- etiqueta decorativa de esquina -->
+  <span class="corner-label" aria-hidden="true">403 / índice</span>
+
+  <script src="project-data.js"></script>
+  <script src="script.js"></script>
+<script>
+const popup = document.getElementById("popup-test");
+const input = document.getElementById("calc-input");
+const feedback = document.getElementById("feedback");
+
+document.getElementById("archive-door").addEventListener("click", function(e) {
+  e.preventDefault();
+  popup.classList.add("active");
+
+  setTimeout(() => {
+    input.focus();
+  }, 50);
+});
+
+function closePopup() {
+  popup.classList.remove("active");
+
+  setTimeout(() => {
+    input.value = "";
+    feedback.textContent = "";
+  }, 300);
+}
+
+/* TYPEWRITER EFFECT */
+function typeText(text, element, speed = 25) {
+  element.textContent = "";
+  let i = 0;
+
+  function type() {
+    if (i < text.length) {
+      element.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    }
+  }
+
+  type();
+}
+
+/* GLITCH EFFECT */
+function triggerGlitch() {
+  popup.querySelector(".popup-content").classList.add("glitch");
+
+  setTimeout(() => {
+    popup.querySelector(".popup-content").classList.remove("glitch");
+  }, 200);
+}
+
+function checkAccess() {
+  const value = input.value;
+
+  feedback.textContent = "";
+
+  setTimeout(() => {
+    try {
+      const result = eval(value);
+
+      if (result === 403) {
+        typeText("access granted...", feedback, 30);
+
+        setTimeout(() => {
+          window.location.href = "archivo.html";
+        }, 1200);
+
+      } else {
+        triggerGlitch();
+        typeText("403", feedback, 40);
+      }
+
+    } catch {
+      triggerGlitch();
+      typeText("...", feedback, 40);
+    }
+  }, 400);
+}
+
+/* ENTER KEY SUPPORT */
+input.addEventListener("keydown", function(e) {
+  if (e.key === "Enter") {
+    checkAccess();
+  }
+});
+</script>
+</body>
+</html>

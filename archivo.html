@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Archivo — 403</title>
+  <meta name="description" content="Archivo completo. Todo el material. Sin curar." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <header class="topbar" role="banner">
+    <a href="index.html" class="topbar__id">403</a>
+    <span class="topbar__crumb">Archivo</span>
+    <div class="topbar__meta">
+      <span class="topbar__dot"></span>
+      <span>sin clasificar</span>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">[menú]</button>
+    </div>
+  </header>
+
+  <!-- NAV OVERLAY (mobile) -->
+  <div class="nav-overlay" role="dialog" aria-label="Menú">
+    <button class="nav-overlay__close">[cerrar]</button>
+    <nav class="nav-overlay__links">
+      <a href="index.html">Inicio</a>
+      <a href="work.html">Work</a>
+      <a href="bitacora.html">Bitácora</a>
+      <a href="archivo.html">Archivo</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+  </div>
+
+  <div class="page-wrap">
+
+    <!-- CABECERA -->
+    <header class="section-head js-reveal">
+      <span class="section-head__num">03 /</span>
+      <h1 class="section-head__title">Archivo</h1>
+      <div class="section-head__meta">
+        <p>todo el material</p>
+        <p>sin curar / sin orden</p>
+      </div>
+    </header>
+
+    <nav class="inner-nav" aria-label="Navegación secundaria">
+      <a href="index.html">Inicio</a>
+      <a href="work.html">Work</a>
+      <a href="bitacora.html">Bitácora</a>
+      <a href="archivo.html">Archivo</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+
+    <main class="archivo-body">
+
+      <!-- Intro + buscador -->
+      <div class="archivo-intro js-reveal">
+        <p>
+          Este es el archivo completo. No está organizado, no está terminado.
+          Algunos archivos tienen nombre, otros no. Navegar bajo su propio riesgo.
+        </p>
+
+        <!-- BÚSQUEDA EN TIEMPO REAL (JS activa el filtro) -->
+        <label class="archivo-search" aria-label="Buscar en el archivo">
+          <span>buscar_</span>
+          <input
+            type="search"
+            placeholder="nombre o tipo..."
+            autocomplete="off"
+            spellcheck="false"
+            aria-label="Filtrar archivos"
+          />
+        </label>
+      </div>
+
+      <!-- Contador (actualizado por JS) -->
+      <p class="archivo-stats js-reveal" aria-live="polite"></p>
+
+      <!-- ════════════════════════════════════════
+           LISTA DENSA DEL ARCHIVO
+           data-type: audio | video | foto | sketch | txt
+           El JS filtra por este atributo o por nombre
+           ════════════════════════════════════════ -->
+      <ul class="archivo-list js-reveal" role="list" aria-label="Elementos del archivo">
+
+        <!-- AUDIO -->
+        <li class="archivo-item" data-type="audio">
+          <span class="archivo-item__type">audio</span>
+          <span class="archivo-item__name">audio_test_01</span>
+          <span class="archivo-item__meta">2025 · mp3 · 3'42"</span>
+        </li>
+        <li class="archivo-item" data-type="audio">
+          <span class="archivo-item__type">audio</span>
+          <span class="archivo-item__name">audio_test_02</span>
+          <span class="archivo-item__meta">2025 · wav · 1'18"</span>
+        </li>
+        <li class="archivo-item" data-type="audio">
+          <span class="archivo-item__type">audio</span>
+          <span class="archivo-item__name">ruido_fondo_v1</span>
+          <span class="archivo-item__meta">2024 · mp3 · 12'07"</span>
+        </li>
+        <li id="item-ruido_fondo_v2" class="archivo-item" data-type="audio" data-work="work.html#project-ruido-fondo-vol-2">
+          <span class="archivo-item__type">audio</span>
+          <span class="archivo-item__name">ruido_fondo_v2</span>
+          <span class="archivo-item__meta">2024 · mp3 · 9'55"</span>
+        </li>
+        <li id="item-freq_440_draft" class="archivo-item" data-type="audio" data-work="work.html#project-frecuencia-440">
+          <span class="archivo-item__type">audio</span>
+          <span class="archivo-item__name">freq_440_draft</span>
+          <span class="archivo-item__meta">2023 · wav · 8'00"</span>
+        </li>
+        <li class="archivo-item" data-type="audio">
+          <span class="archivo-item__type">audio</span>
+          <span class="archivo-item__name">silencio_hab_01</span>
+          <span class="archivo-item__meta">2025 · wav · 45'00"</span>
+        </li>
+        <li class="archivo-item" data-type="audio">
+          <span class="archivo-item__type">audio</span>
+          <span class="archivo-item__name">cassette_rip_001</span>
+          <span class="archivo-item__meta">2025 · mp3 · 38'12"</span>
+        </li>
+        <li class="archivo-item" data-type="audio">
+          <span class="archivo-item__type">audio</span>
+          <span class="archivo-item__name">cinta_sin_rotular</span>
+          <span class="archivo-item__meta">sin fecha · cassette</span>
+        </li>
+        <li class="archivo-item" data-type="audio">
+          <span class="archivo-item__type">audio</span>
+          <span class="archivo-item__name">loop_audio_04</span>
+          <span class="archivo-item__meta">2024 · aiff · 0'12"</span>
+        </li>
+        <li class="archivo-item" data-type="audio">
+          <span class="archivo-item__type">audio</span>
+          <span class="archivo-item__name">field_rec_ciudad_a</span>
+          <span class="archivo-item__meta">2024 · wav · 22'40"</span>
+        </li>
+
+        <!-- VIDEO -->
+        <li class="archivo-item" data-type="video">
+          <span class="archivo-item__type">video</span>
+          <span class="archivo-item__name">video_test_01</span>
+          <span class="archivo-item__meta">2025 · mp4 · 4'23"</span>
+        </li>
+        <li class="archivo-item" data-type="video">
+          <span class="archivo-item__type">video</span>
+          <span class="archivo-item__name">loop_001</span>
+          <span class="archivo-item__meta">2024 · mp4 · 0'08"</span>
+        </li>
+        <li class="archivo-item" data-type="video">
+          <span class="archivo-item__type">video</span>
+          <span class="archivo-item__name">loop_002</span>
+          <span class="archivo-item__meta">2024 · mp4 · 0'08"</span>
+        </li>
+        <li class="archivo-item" data-type="video">
+          <span class="archivo-item__type">video</span>
+          <span class="archivo-item__name">loop_003</span>
+          <span class="archivo-item__meta">2023 · mp4 · 0'08"</span>
+        </li>
+        <li id="item-accion_espacio_pub" class="archivo-item" data-type="video" data-work="work.html#project-sin-titulo-07">
+          <span class="archivo-item__type">video</span>
+          <span class="archivo-item__name">accion_espacio_pub</span>
+          <span class="archivo-item__meta">2025 · mp4 · 12'40"</span>
+        </li>
+        <li class="archivo-item" data-type="video">
+          <span class="archivo-item__type">video</span>
+          <span class="archivo-item__name">sin_titulo_draft_v3</span>
+          <span class="archivo-item__meta">2024 · mov · 7'18"</span>
+        </li>
+        <li class="archivo-item" data-type="video">
+          <span class="archivo-item__type">video</span>
+          <span class="archivo-item__name">grabacion_accidental</span>
+          <span class="archivo-item__meta">2024 · mp4 · 0'22"</span>
+        </li>
+        <li id="item-loop_003" class="archivo-item" data-type="video" data-work="work.html#project-loop-003">
+          <span class="archivo-item__type">video</span>
+          <span class="archivo-item__name">pantalla_rota_01</span>
+          <span class="archivo-item__meta">2023 · mp4 · 1'05"</span>
+        </li>
+
+        <!-- FOTO -->
+        <li class="archivo-item" data-type="foto">
+          <span class="archivo-item__type">foto</span>
+          <span class="archivo-item__name">foto_001</span>
+          <span class="archivo-item__meta">2025 · jpg · 35mm</span>
+        </li>
+        <li class="archivo-item" data-type="foto">
+          <span class="archivo-item__type">foto</span>
+          <span class="archivo-item__name">foto_002</span>
+          <span class="archivo-item__meta">2025 · jpg · 35mm</span>
+        </li>
+        <li class="archivo-item" data-type="foto">
+          <span class="archivo-item__type">foto</span>
+          <span class="archivo-item__name">foto_003</span>
+          <span class="archivo-item__meta">2024 · jpg · digital</span>
+        </li>
+        <li class="archivo-item" data-type="foto">
+          <span class="archivo-item__type">foto</span>
+          <span class="archivo-item__name">foto_004</span>
+          <span class="archivo-item__meta">2024 · jpg · 35mm</span>
+        </li>
+        <li class="archivo-item" data-type="foto">
+          <span class="archivo-item__type">foto</span>
+          <span class="archivo-item__name">foto_005</span>
+          <span class="archivo-item__meta">2024 · tiff · scan</span>
+        </li>
+        <li class="archivo-item" data-type="foto">
+          <span class="archivo-item__type">foto</span>
+          <span class="archivo-item__name">foto_006</span>
+          <span class="archivo-item__meta">2023 · jpg · 35mm</span>
+        </li>
+        <li class="archivo-item" data-type="foto">
+          <span class="archivo-item__type">foto</span>
+          <span class="archivo-item__name">foto_007</span>
+          <span class="archivo-item__meta">2023 · jpg · digital</span>
+        </li>
+        <li class="archivo-item" data-type="foto">
+          <span class="archivo-item__type">foto</span>
+          <span class="archivo-item__name">foto_intervencion_01</span>
+          <span class="archivo-item__meta">2022 · jpg · tinta</span>
+        </li>
+        <li class="archivo-item" data-type="foto">
+          <span class="archivo-item__type">foto</span>
+          <span class="archivo-item__name">ciudad_desconocida_01</span>
+          <span class="archivo-item__meta">sin fecha · byn · scan</span>
+        </li>
+        <li class="archivo-item" data-type="foto">
+          <span class="archivo-item__type">foto</span>
+          <span class="archivo-item__name">ciudad_desconocida_02</span>
+          <span class="archivo-item__meta">sin fecha · byn · scan</span>
+        </li>
+        <li class="archivo-item" data-type="foto">
+          <span class="archivo-item__type">foto</span>
+          <span class="archivo-item__name">polaroid_borrosa_01</span>
+          <span class="archivo-item__meta">sin fecha · polaroid</span>
+        </li>
+
+        <!-- SKETCH -->
+        <li class="archivo-item" data-type="sketch">
+          <span class="archivo-item__type">sketch</span>
+          <span class="archivo-item__name">sketch_01</span>
+          <span class="archivo-item__meta">2025 · papel · lápiz</span>
+        </li>
+        <li class="archivo-item" data-type="sketch">
+          <span class="archivo-item__type">sketch</span>
+          <span class="archivo-item__name">sketch_02</span>
+          <span class="archivo-item__meta">2025 · papel · boli</span>
+        </li>
+        <li class="archivo-item" data-type="sketch">
+          <span class="archivo-item__type">sketch</span>
+          <span class="archivo-item__name">sketch_03</span>
+          <span class="archivo-item__meta">2024 · papel · tinta</span>
+        </li>
+        <li id="item-mapa_01" class="archivo-item" data-type="sketch" data-work="work.html#project-cartografia-personal">
+          <span class="archivo-item__type">sketch</span>
+          <span class="archivo-item__name">mapa_01</span>
+          <span class="archivo-item__meta">2024 · papel · tinta</span>
+        </li>
+        <li class="archivo-item" data-type="sketch">
+          <span class="archivo-item__type">sketch</span>
+          <span class="archivo-item__name">mapa_02_inacabado</span>
+          <span class="archivo-item__meta">2024 · papel · lápiz</span>
+        </li>
+        <li id="item-boceto_descartado_04" class="archivo-item" data-type="sketch" data-work="work.html#project-borrador-rojo">
+          <span class="archivo-item__type">sketch</span>
+          <span class="archivo-item__name">boceto_descartado_04</span>
+          <span class="archivo-item__meta">2023 · papel</span>
+        </li>
+        <li class="archivo-item" data-type="sketch">
+          <span class="archivo-item__type">sketch</span>
+          <span class="archivo-item__name">dibujo_sin_nombre</span>
+          <span class="archivo-item__meta">sin fecha · —</span>
+        </li>
+
+        <!-- TEXTO -->
+        <li class="archivo-item" data-type="txt">
+          <span class="archivo-item__type">txt</span>
+          <span class="archivo-item__name">notas_proceso_01.txt</span>
+          <span class="archivo-item__meta">2025 · texto · 2.3kb</span>
+        </li>
+        <li class="archivo-item" data-type="txt">
+          <span class="archivo-item__type">txt</span>
+          <span class="archivo-item__name">fragmento_sin_terminar</span>
+          <span class="archivo-item__meta">2025 · texto · 0.8kb</span>
+        </li>
+        <li class="archivo-item" data-type="txt">
+          <span class="archivo-item__type">txt</span>
+          <span class="archivo-item__name">recibo_tienda_discos</span>
+          <span class="archivo-item__meta">sin fecha · scan · papel</span>
+        </li>
+        <li class="archivo-item" data-type="txt">
+          <span class="archivo-item__type">txt</span>
+          <span class="archivo-item__name">poema_maquina_escribir</span>
+          <span class="archivo-item__meta">sin fecha · scan · papel</span>
+        </li>
+        <li class="archivo-item" data-type="txt">
+          <span class="archivo-item__type">txt</span>
+          <span class="archivo-item__name">ideas_proyecto_403</span>
+          <span class="archivo-item__meta">2025 · markdown · 5.1kb</span>
+        </li>
+        <li class="archivo-item" data-type="txt">
+          <span class="archivo-item__type">txt</span>
+          <span class="archivo-item__name">referencias_tarkovsky</span>
+          <span class="archivo-item__meta">2025 · txt · 1.4kb</span>
+        </li>
+
+        <!-- SIN CATEGORÍA / INCLASIFICABLES -->
+        <li class="archivo-item" data-type="">
+          <span class="archivo-item__type">???</span>
+          <span class="archivo-item__name">_sin_nombre_001</span>
+          <span class="archivo-item__meta">2024 · —</span>
+        </li>
+        <li class="archivo-item" data-type="">
+          <span class="archivo-item__type">???</span>
+          <span class="archivo-item__name">_sin_nombre_002</span>
+          <span class="archivo-item__meta">2025 · —</span>
+        </li>
+        <li class="archivo-item" data-type="">
+          <span class="archivo-item__type">???</span>
+          <span class="archivo-item__name">borrador_borrado</span>
+          <span class="archivo-item__meta">2023 · eliminado</span>
+        </li>
+        <li class="archivo-item" data-type="">
+          <span class="archivo-item__type">???</span>
+          <span class="archivo-item__name">???</span>
+          <span class="archivo-item__meta">sin fecha · —</span>
+        </li>
+
+      </ul>
+
+    </main>
+  </div>
+
+  <span class="corner-label" aria-hidden="true">403 / archivo</span>
+  <script src="project-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work — 403</title>
+  <meta name="description" content="Proyectos seleccionados — portafolio curado." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <header class="topbar" role="banner">
+    <a href="index.html" class="topbar__id">403</a>
+    <span class="topbar__crumb">Work</span>
+    <div class="topbar__meta">
+      <span class="topbar__dot"></span>
+      <span>proyectos</span>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">[menú]</button>
+    </div>
+  </header>
+
+  <!-- NAV OVERLAY (mobile) -->
+  <div class="nav-overlay" role="dialog" aria-label="Menú">
+    <button class="nav-overlay__close">[cerrar]</button>
+    <nav class="nav-overlay__links">
+      <a href="index.html">Inicio</a>
+      <a href="work.html">Work</a>
+      <a href="bitacora.html">Bitácora</a>
+      <a href="archivo.html">Archivo</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+  </div>
+
+  <div class="page-wrap">
+
+    <!-- CABECERA DE SECCIÓN -->
+    <header class="section-head js-reveal">
+      <span class="section-head__num">01 /</span>
+      <h1 class="section-head__title">Work</h1>
+      <div class="section-head__meta">
+        <p>proyectos seleccionados</p>
+        <p>2023 — 2026</p>
+      </div>
+    </header>
+
+    <!-- NAV INTERIOR + FILTROS -->
+    <nav class="inner-nav" aria-label="Navegación secundaria">
+      <a href="index.html">Inicio</a>
+      <a href="work.html">Work</a>
+      <a href="bitacora.html">Bitácora</a>
+      <a href="archivo.html">Archivo</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+
+    <main class="work-body">
+
+      <!-- FILTROS POR CATEGORÍA -->
+      <div class="work-filters js-reveal" role="group" aria-label="Filtrar proyectos">
+        <button class="wf-btn active" data-cat="all">Todos</button>
+        <button class="wf-btn" data-cat="audio">Audio</button>
+        <button class="wf-btn" data-cat="video">Video</button>
+        <button class="wf-btn" data-cat="visual">Visual</button>
+      </div>
+
+      <!-- ── GRID DE PROYECTOS ── -->
+      <!--
+        Alternancia: los pares tienen la imagen a la derecha (CSS direction: rtl)
+        data-cat: determina el filtro aplicable
+      -->
+
+      <div class="work-grid" aria-label="Proyectos">
+        <article id="project-dos-aves" data-project-id="project-dos-aves" class="project js-reveal" data-cat="video" data-related="bitacora.html#entry-03,archivo.html#item-boceto_descartado_04">
+          <div class="project__media">
+            <div class="project__media-placeholder">
+              <span>visual — embed aquí</span>
+            </div>
+          </div>
+          <div class="project__info">
+            <div>
+              <p class="project__cat">video</p>
+              <h2 class="project__title">Dos aves</h2>
+              <p class="project__desc">Dos aves en vuelo. Fotografía intervenida con tinta roja. Edición de 5.</p>
+            </div>
+            <div class="project__related" aria-label="Páginas relacionadas del proyecto"></div>
+            <div class="project__foot">
+              <span class="project__year">2026</span>
+              <a href="work/project-dos-aves.html" class="project__link">ver proyecto →</a>
+            </div>
+          </div>
+        </article>
+
+        <article id="project-sin-titulo-07" data-project-id="project-sin-titulo-07" class="project js-reveal" data-cat="video" data-related="bitacora.html#entry-02,archivo.html#item-accion_espacio_pub">
+          <div class="project__media">
+            <div class="project__media-placeholder">
+              <span>video — embed aquí</span>
+            </div>
+          </div>
+          <div class="project__info">
+            <div>
+              <p class="project__cat">video</p>
+              <h2 class="project__title">Sin título #07</h2>
+              <p class="project__desc">Registro de una acción en espacio público. Sin guión previo. La cámara encendida mucho antes de que algo ocurra.</p>
+            </div>
+            <div class="project__related" aria-label="Páginas relacionadas del proyecto"></div>
+            <div class="project__foot">
+              <span class="project__year">2025</span>
+              <a href="work/project-sin-titulo-07.html" class="project__link">ver proyecto →</a>
+            </div>
+          </div>
+        </article>
+
+        <article id="project-ruido-fondo-vol-2" data-project-id="project-ruido-fondo-vol-2" class="project js-reveal" data-cat="audio" data-related="bitacora.html#entry-01,archivo.html#item-ruido_fondo_v2">
+          <div class="project__media">
+            <div class="project__media-placeholder">
+              <span>audio — embed aquí</span>
+            </div>
+          </div>
+          <div class="project__info">
+            <div>
+              <p class="project__cat">audio</p>
+              <h2 class="project__title">Ruido de fondo vol. 2</h2>
+              <p class="project__desc">Field recordings de tres ciudades distintas grabadas en un mismo mes. La superposición como método de composición.</p>
+            </div>
+            <div class="project__related" aria-label="Páginas relacionadas del proyecto"></div>
+            <div class="project__foot">
+              <span class="project__year">2024</span>
+              <a href="work/project-ruido-fondo-vol-2.html" class="project__link">escuchar →</a>
+            </div>
+          </div>
+        </article>
+
+        <article id="project-cartografia-personal" data-project-id="project-cartografia-personal" class="project js-reveal" data-cat="visual" data-related="bitacora.html#entry-03,archivo.html#item-mapa_01">
+          <div class="project__media">
+            <div class="project__media-placeholder">
+              <span>visual — embed aquí</span>
+            </div>
+          </div>
+          <div class="project__info">
+            <div>
+              <p class="project__cat">visual</p>
+              <h2 class="project__title">Cartografía personal</h2>
+              <p class="project__desc">Serie de fotografías analógicas intervenidas con tinta. 15 piezas. Edición de 3.</p>
+            </div>
+            <div class="project__related" aria-label="Páginas relacionadas del proyecto"></div>
+            <div class="project__foot">
+              <span class="project__year">2024</span>
+              <a href="work/project-cartografia-personal.html" class="project__link">ver proyecto →</a>
+            </div>
+          </div>
+        </article>
+
+        <article id="project-loop-003" data-project-id="project-loop-003" class="project js-reveal" data-cat="video" data-related="bitacora.html#entry-02,archivo.html#item-loop_003">
+          <div class="project__media">
+            <div class="project__media-placeholder">
+              <span>video — embed aquí</span>
+            </div>
+          </div>
+          <div class="project__info">
+            <div>
+              <p class="project__cat">video</p>
+              <h2 class="project__title">Loop 003</h2>
+              <p class="project__desc">Video loop de 8 segundos. Una sombra en diferentes horas del mismo día.</p>
+            </div>
+            <div class="project__related" aria-label="Páginas relacionadas del proyecto"></div>
+            <div class="project__foot">
+              <span class="project__year">2023</span>
+              <a href="work/project-loop-003.html" class="project__link">ver proyecto →</a>
+            </div>
+          </div>
+        </article>
+
+        <article id="project-frecuencia-440" data-project-id="project-frecuencia-440" class="project js-reveal" data-cat="audio" data-related="bitacora.html#entry-01,archivo.html#item-freq_440_draft">
+          <div class="project__media">
+            <div class="project__media-placeholder">
+              <span>audio — embed aquí</span>
+            </div>
+          </div>
+          <div class="project__info">
+            <div>
+              <p class="project__cat">audio</p>
+              <h2 class="project__title">Frecuencia 440</h2>
+              <p class="project__desc">Sintetizador modular. Exploración de resonancia en espacios cerrados. Grabado en un cuarto vacío.</p>
+            </div>
+            <div class="project__related" aria-label="Páginas relacionadas del proyecto"></div>
+            <div class="project__foot">
+              <span class="project__year">2023</span>
+              <a href="work/project-frecuencia-440.html" class="project__link">escuchar →</a>
+            </div>
+          </div>
+        </article>
+
+        <article id="project-borrador-rojo" data-project-id="project-borrador-rojo" class="project js-reveal" data-cat="visual" data-related="bitacora.html#entry-03,archivo.html#item-boceto_descartado_04">
+          <div class="project__media">
+            <div class="project__media-placeholder">
+              <span>visual — embed aquí</span>
+            </div>
+          </div>
+          <div class="project__info">
+            <div>
+              <p class="project__cat">visual</p>
+              <h2 class="project__title">Borrador rojo</h2>
+              <p class="project__desc">Intervención gráfica sobre documentos encontrados. El tachado como acto de apropiación y resignificación.</p>
+            </div>
+            <div class="project__related" aria-label="Páginas relacionadas del proyecto"></div>
+            <div class="project__foot">
+              <span class="project__year">2022</span>
+              <a href="work/project-borrador-rojo.html" class="project__link">ver proyecto →</a>
+            </div>
+          </div>
+        </article>
+
+    </div><!-- /.work-grid -->
+
+    </main>
+  </div>
+
+  <span class="corner-label" aria-hidden="true">403 / work</span>
+  <script src="project-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — 403</title>
+  <meta name="description" content="Quién, qué, por qué." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <header class="topbar" role="banner">
+    <a href="index.html" class="topbar__id">403</a>
+    <span class="topbar__crumb">About</span>
+    <div class="topbar__meta">
+      <span class="topbar__dot"></span>
+      <span>quién</span>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">[menú]</button>
+    </div>
+  </header>
+
+  <!-- NAV OVERLAY (mobile) -->
+  <div class="nav-overlay" role="dialog" aria-label="Menú">
+    <button class="nav-overlay__close">[cerrar]</button>
+    <nav class="nav-overlay__links">
+      <a href="index.html">Inicio</a>
+      <a href="work.html">Work</a>
+      <a href="bitacora.html">Bitácora</a>
+      <a href="archivo.html">Archivo</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+  </div>
+
+  <div class="page-wrap">
+
+    <!-- CABECERA -->
+    <header class="section-head js-reveal">
+      <span class="section-head__num">04 /</span>
+      <h1 class="section-head__title">About</h1>
+      <div class="section-head__meta">
+        <p>quién / qué / por qué</p>
+      </div>
+    </header>
+
+    <nav class="inner-nav" aria-label="Navegación secundaria">
+      <a href="index.html">Inicio</a>
+      <a href="work.html">Work</a>
+      <a href="bitacora.html">Bitácora</a>
+      <a href="archivo.html">Archivo</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+
+    <main class="about-body">
+
+      <!-- CITA GRANDE — parte superior, todo el ancho -->
+      <section class="about-quote js-reveal" aria-label="Presentación">
+        <blockquote>
+          "Hay cosas que no caben en ninguna categoría.
+          Por eso <em>existe</em> el archivo."
+        </blockquote>
+      </section>
+
+      <!-- LAYOUT ASIMÉTRICO: imagen (2fr) + texto (3fr) -->
+      <div class="about-split">
+
+        <!-- Imagen: offset decorativo vía CSS ::before -->
+        <div class="about-split__image js-reveal" aria-hidden="false">
+          <!--
+            Reemplaza con tu imagen real.
+            Formato vertical recomendado: 600×800 px mínimo.
+            <img src="assets/about.jpg" alt="descripción" class="about-split__img" />
+          -->
+            <!-- <img src="assets\Cover.png" alt="descripción" class="about-split__img" / -->
+          <div class="about-img-placeholder" role="img" aria-label="Imagen — placeholder">
+            <span>retrato</span>
+            <span>/ lugar / objeto</span>
+          </div>
+          <p class="about-img-caption">fig. 00 — sin título — sin fecha</p>
+        </div>
+
+        <!-- Textos -->
+        <div class="about-split__text">
+
+          <!-- Bloque 1: sobre el proyecto -->
+          <div class="about-text-block js-reveal">
+            <span class="about-label">— sobre el proyecto</span>
+            <p>
+              403 es un nombre prestado del protocolo HTTP (el apartamento donde vivo).
+              El código que dice: existe, pero no puedes entrar.
+              Hay algo en eso que me pareció honesto para nombrar
+              un espacio de trabajo propio.
+            </p>
+            <p>
+              Este sitio es un intento de mantener en un mismo lugar
+              lo que de otra forma se dispersa: el proceso, los
+              descartados, los materiales que no terminaron en
+              ninguna parte. No es un portafolio en el sentido
+              tradicional. Es más parecido a una caja de cartón
+              con etiqueta mal escrita.
+            </p>
+          </div>
+
+          <!-- Bloque 2: sobre el trabajo -->
+          <div class="about-text-block js-reveal">
+            <span class="about-label">— sobre el trabajo</span>
+            <p>
+              Trabajo principalmente con audio, imagen y video.
+              A veces todo junto. A veces nada de lo anterior.
+              El soporte cambia; la pregunta suele ser la misma.
+            </p>
+            <p>
+              Me interesa lo que queda fuera de los bordes.
+              El tiempo muerto. Lo que ocurre antes de que
+              empiece la grabación. La cosa antes de ser cosa.
+            </p>
+          </div>
+
+          <!-- Ficha técnica tipo metadata — reemplaza con tus datos -->
+          <dl class="about-meta js-reveal" aria-label="Información de contacto y contexto">
+            <dt>nombre</dt>
+            <dd>Sebas Mora</dd>
+
+            <dt>base</dt>
+            <dd>Bogotá D.C, Colombia</dd>
+
+            <dt>disciplina</dt>
+            <dd>audio · video · animación ·imagen</dd>
+
+            <dt>desde</dt>
+            <dd>2020</dd>
+
+            <dt>sitio</dt>
+            <dd>construcción permanente</dd>
+
+            <dt>código</dt>
+            <dd>HTTP 403 — acceso restringido</dd>
+          </dl>
+
+          <!-- link a contacto -->
+          <div class="js-reveal">
+            <a href="contact.html" class="archive-door" aria-label="Ir a la página de contacto" data-scramble-target="Contacto">
+              <span class="archive-door__inner">
+                <span class="archive-door__arrow" aria-hidden="true">→</span>
+                <span data-scramble>escribir</span>
+              </span>
+            </a>
+          </div>
+
+        </div><!-- /.about-split__text -->
+
+      </div><!-- /.about-split -->
+
+    </main>
+  </div>
+
+  <span class="corner-label" aria-hidden="true">403 / about</span>
+  <script src="project-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

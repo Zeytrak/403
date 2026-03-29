@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bitácora — 403</title>
+  <meta name="description" content="Notas de proceso. Fragmentos. Registros." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <header class="topbar" role="banner">
+    <a href="index.html" class="topbar__id">403</a>
+    <span class="topbar__crumb">Bitácora</span>
+    <div class="topbar__meta">
+      <span class="topbar__dot"></span>
+      <span>notas</span>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">[menú]</button>
+    </div>
+  </header>
+
+  <!-- NAV OVERLAY (mobile) -->
+  <div class="nav-overlay" role="dialog" aria-label="Menú">
+    <button class="nav-overlay__close">[cerrar]</button>
+    <nav class="nav-overlay__links">
+      <a href="index.html">Inicio</a>
+      <a href="work.html">Work</a>
+      <a href="bitacora.html">Bitácora</a>
+      <a href="archivo.html">Archivo</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+  </div>
+
+  <div class="page-wrap">
+
+    <!-- CABECERA -->
+    <header class="section-head js-reveal">
+      <span class="section-head__num">02 /</span>
+      <h1 class="section-head__title">Bitácora</h1>
+      <div class="section-head__meta">
+        <p>notas / fragmentos</p>
+        <p>en orden inverso</p>
+      </div>
+    </header>
+
+    <nav class="inner-nav" aria-label="Navegación secundaria">
+      <a href="index.html">Inicio</a>
+      <a href="work.html">Work</a>
+      <a href="bitacora.html">Bitácora</a>
+      <a href="archivo.html">Archivo</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+
+    <div class="bitacora-controls js-reveal" aria-label="Controles de la bitácora">
+      <div class="bitacora-controls__group">
+        <span>Orden</span>
+        <button type="button" class="bitacora-controls__button active" data-sort="desc">más recientes</button>
+        <button type="button" class="bitacora-controls__button" data-sort="asc">más antiguos</button>
+      </div>
+      <div class="bitacora-controls__group">
+        <span>Vista</span>
+        <button type="button" class="bitacora-controls__button active" data-view="expanded">expandida</button>
+        <button type="button" class="bitacora-controls__button" data-view="compact">compacta</button>
+      </div>
+    </div>
+
+    <main class="bitacora-body" aria-label="Entradas de bitácora">
+
+
+      <!-- ══════════════════════════════
+           ENTRADA 01
+           ══════════════════════════════ -->
+      <article id="entry-01" class="entry js-reveal" data-date="2025-11-14" data-work="work.html#project-frecuencia-440">
+
+        <!-- Fecha como elemento gráfico -->
+        <div class="entry__date-col" aria-label="Fecha: 14 de noviembre de 2025">
+          <span class="entry__dd" aria-hidden="true">14</span>
+          <span class="entry__mmyy" aria-hidden="true">
+            Nov<br />2025
+          </span>
+        </div>
+
+        <!-- Cuerpo de la entrada -->
+        <div class="entry__body">
+
+          <span class="entry__tag">proceso</span>
+
+          <h2 class="entry__title">
+            El sonido de una habitación vacía
+          </h2>
+
+          <div class="entry__text">
+            <p>
+              Pasé tres horas grabando el silencio de un cuarto deshabitado.
+              El resultado no es silencio: hay una calefacción, el viento
+              contra el cristal, mi propia respiración. El ruido como material.
+              La ausencia como estructura.
+            </p>
+            <p>
+              Estoy pensando en cómo montar todo esto. Quizás sin ningún orden.
+              Quizás en una capa sobre otra hasta que nada sea inteligible.
+              La pregunta es si el resultado dice algo o si simplemente existe.
+            </p>
+          </div>
+
+          <!--
+            IMAGEN / EMBED:
+            Descomenta según el tipo de contenido.
+
+            Imagen:
+            <div class="entry__media">
+              <img src="assets/entrada01.jpg" alt="descripción de la imagen" />
+            </div>
+
+            Video (YouTube):
+            <div class="entry__media">
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+            </div>
+          -->
+          <div class="entry__media">
+            <div class="entry__media-placeholder">
+              <span>imagen / embed — 2025.11.14</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- número fantasma decorativo -->
+        <span class="entry__ghost-num" aria-hidden="true">01</span>
+
+      </article>
+
+
+      <!-- ══════════════════════════════
+           ENTRADA 02
+           ══════════════════════════════ -->
+      <article id="entry-02" class="entry js-reveal" data-date="2025-10-02" data-work="work.html#project-loop-003">
+
+        <div class="entry__date-col" aria-label="Fecha: 2 de octubre de 2025">
+          <span class="entry__dd" aria-hidden="true">02</span>
+          <span class="entry__mmyy" aria-hidden="true">
+            Oct<br />2025
+          </span>
+        </div>
+
+        <div class="entry__body">
+
+          <span class="entry__tag">referencia</span>
+
+          <h2 class="entry__title">
+            Ver con lentitud
+          </h2>
+
+          <div class="entry__text">
+            <p>
+              La velocidad con la que consumimos imágenes ha roto algo
+              en la forma de mirar. Un fotograma necesita tiempo para
+              asentarse. Para revelar lo que no está en primer plano.
+            </p>
+            <p>
+              En algún lugar leí que Tarkovsky dejaba la cámara encendida
+              mucho antes de que empezara la acción. Así capturaba algo
+              que no estaba en el guión. Me pregunto qué habría en esos
+              fragmentos previos que nadie vio.
+            </p>
+          </div>
+
+          <div class="entry__media">
+            <div class="entry__media-placeholder">
+              <span>embed — video / referencia</span>
+            </div>
+          </div>
+
+        </div>
+
+        <span class="entry__ghost-num" aria-hidden="true">02</span>
+
+      </article>
+
+
+      <!-- ══════════════════════════════
+           ENTRADA 03
+           ══════════════════════════════ -->
+      <article id="entry-03" class="entry js-reveal" data-date="2025-08-08" data-work="work.html#project-borrador-rojo">
+
+        <div class="entry__date-col" aria-label="Fecha: 8 de agosto de 2025">
+          <span class="entry__dd" aria-hidden="true">08</span>
+          <span class="entry__mmyy" aria-hidden="true">
+            Ago<br />2025
+          </span>
+        </div>
+
+        <div class="entry__body">
+
+          <span class="entry__tag">nota rápida</span>
+
+          <h2 class="entry__title">
+            Cosas que encontré en una caja sin etiquetar
+          </h2>
+
+          <div class="entry__text">
+            <p>
+              Una cinta de cassette de los 90 con música que nadie recuerda
+              haber grabado. Dos fotos en blanco y negro de una ciudad
+              que no reconozco. Un recibo de una tienda de discos que ya
+              no existe. Un texto en papel de máquina de escribir que
+              podría ser un poema.
+            </p>
+            <p>
+              Los archivos personales son siempre autobiografías
+              fragmentadas. Nadie decide qué guardar con criterio.
+              Se guarda lo que se encuentra en el bolsillo cuando
+              llegas a casa.
+            </p>
+          </div>
+
+          <div class="entry__media">
+            <img
+              src="https://placehold.co/560x315/2E2318/EAE6DC?text=foto+—+caja+sin+etiquetar"
+              alt="Caja sin etiquetar — placeholder"
+            />
+          </div>
+
+        </div>
+
+        <span class="entry__ghost-num" aria-hidden="true">03</span>
+
+      </article>
+
+
+    </main>
+  </div>
+
+  <span class="corner-label" aria-hidden="true">403 / bitácora</span>
+  <script src="project-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
